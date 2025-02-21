@@ -1,0 +1,323 @@
+*{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Correction de la couleur de fond */
+    perspective: 1000px;
+}
+
+main{
+    position: absolute;
+    height: 380px;
+    width: 520px;
+    border: solid;
+    border-radius: 10px;
+    background-color: #005801;
+}
+
+.container {
+    position: relative;
+    width: 88vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border: solid ;
+}
+
+i{
+    padding: 4px;
+    
+   
+}
+
+.trapezoid {
+    position: absolute;
+    padding: 10px;
+    width: 450px;
+    height: 140px;
+    background-size: 20px;
+    overflow: hidden;
+    clip-path: polygon(10% 100%, 90% 100%, 100% 0, 0 0); /* Correction de la syntaxe de clip-path */
+}
+
+
+.top {
+    transform: translateY(-260px);
+    width: 600px;
+    height: auto;
+    top: 260px;
+}
+
+.bottom {
+    transform: translateY(260px) rotate(180deg);
+    width: 600px;
+   
+    bottom: 260px;
+}
+
+.left {
+    transform: translateX(-330px) rotate(-90deg);
+    left: 290px;
+    width: 700px;
+    height: auto;
+}
+
+.right {
+    transform: translateX(330px) rotate(90deg);
+    width: 700px;
+    left: 420px;
+    height: auto;
+}
+
+.field {
+    position: absolute;
+    width: 480px;
+    height: 350px;
+    background-color: green;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    top: 15px;
+    left: 20px;
+}
+
+.field::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.mid-line {
+    position: absolute;
+    /* Ajoutez d'autres propriétés pour styliser la ligne médiane */
+}
+
+.mid-line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.goal-left {
+    left: 0;
+}
+
+.goal-right {
+    right: 0;
+}
+
+.penalty-spot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.penalty-left {
+    left: 44px;
+    
+}
+
+.penalty-right {
+    right: 46px;
+}
+
+.corner-line {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid #fff 2px;
+    padding: 8px;
+}
+
+.corner-top-left {
+    top: -12px;
+    left: -10px;
+    width: 10px;
+}
+
+.corner-top-right {
+    top: -12px;
+    right: -10px;
+    width: 10px;
+}
+
+.corner-bottom-left {
+    bottom:-12px;
+    left: -10px;
+    width: 10px;
+}
+
+.corner-bottom-right {
+    bottom: -12px;
+    right: -10px;
+    width: 10px;
+}
+
+
+.penalty-area {
+    position: absolute;
+    width: 70px;
+    height: 180px;
+    border: 2px solid white;
+    
+}
+
+.penalty-left-area {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: none;
+}
+
+.penalty-right-area {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: none;
+}
+
+
+
+.deux{
+    position: absolute;
+    border: solid #fff;
+    width: 25px;
+    height: 60px; 
+    right: 0;
+    top: 31%;
+    border-right: none;
+}
+
+.trois{
+    position: absolute;
+    border: solid #fff;
+    width: 25px;
+    height: 60px; 
+    left: 0;
+    top: 31%;
+    border-left: none;
+}
+
+.cadre1, .cadre2{
+    border: solid #fff;
+    height: 30px;
+    width: 10px;
+    position: absolute;
+}
+
+.cadre1{
+    top: 73px;
+    left: 73px;
+    border-radius: 0px 8px 8px 0px ;
+}
+
+.cadre2{
+    top: 73px;
+    left: 392px;
+    border-radius: 8px 0px 0px 8px ;
+}
+
+.ligne1{
+    width: 95%;
+   
+    margin: auto;
+}
+
+.ligne2{
+    width: 91%;
+    
+    margin: auto;
+}
+
+.ligne3{
+    width: 86%;
+   
+    margin: auto;
+}
+
+.ligne4{
+    width: 82%;
+    
+    margin: auto;
+}
+
+.ligne5{
+    width: 78%;
+    
+    margin: auto;
+}
+
+.ligne6{
+    width: 74%;
+   
+    margin: auto;
+}
+.ligne1c{
+    width: 98%;
+    
+    margin: auto;
+}
+
+.ligne2c{
+    width: 93%;
+   
+    margin: auto;
+}
+
+.ligne3c{
+    width: 89%;
+    
+    margin: auto;
+}
+
+.ligne4c{
+    width: 85%;
+   
+    margin: auto;
+}
+
+.ligne5c{
+    width: 82%;
+   
+    margin: auto;
+}
+
+.ligne6c{
+    width: 78%;
+   
+    margin: auto;
+}
+
+
+.ligne1>i, .ligne1c>i, .ligne2>i, .ligne2c>i{
+    color: #019700;
+}
+
+.ligne3>i, .ligne3c>i, .ligne4>i, .ligne4c>i{
+    color: #FFEF0C;
+}
+
+.ligne5>i, .ligne5c>i, .ligne6>i, .ligne6c>i{
+    color: #F20505;
+}
